@@ -2,13 +2,13 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/fireba
 import { getAuth, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_MEASUREMENT_ID"
+  apiKey: "AIzaSyAhr2QrGgAZ4CiX1E_NGuCTEjO5mdO8rR0",
+  authDomain: "user-authentication-47380.firebaseapp.com",
+  projectId: "user-authentication-47380",
+  storageBucket: "user-authentication-47380.appspot.com",
+  messagingSenderId: "483187118922",
+  appId: "1:483187118922:web:671077478349e12edf67b3",
+  measurementId: "G-7Y7Z6GGWZ4"
 };
 
 const app = initializeApp(firebaseConfig);
