@@ -109,6 +109,9 @@
     height: auto;
     padding-bottom: 20px;
   }
+  .card_terms > span {
+    font-size: .1rem;
+  }
   span {
     display: flex;
     justify-content: center;
