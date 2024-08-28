@@ -14,7 +14,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const 
+const database = getDatabase (app)
 
 function updateUserProfile(user) {
   const userName = user.displayName || "No name provided";
