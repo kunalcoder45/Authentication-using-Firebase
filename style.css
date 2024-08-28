@@ -101,6 +101,7 @@
 .social-container i {
   font-size: 1.5rem;
 }
+/* mobile view */
 @media screen and (max-width: 767px) {
   .container {
     padding: 20px;
@@ -110,12 +111,12 @@
     padding-bottom: 20px;
   }
   span {
-    
     display: flex;
     justify-content: center;
+    font-size: 1.4rem;
   }
 }
-
+/* tab view */
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   .card {
     padding: 40px;
@@ -145,7 +146,7 @@
     justify-content: center;
   }
 }
-
+/* desktop view */
 @media screen and (min-width: 1024px) {
   .card {
     height: 1024px;
