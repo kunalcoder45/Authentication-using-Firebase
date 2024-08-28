@@ -17,10 +17,10 @@ const auth = getAuth(app);
 auth.languageCode = 'en';
 const database = getDatabase(app);
 
-document.getElementById('signUp-btn').addEventListener('click', function() {
-    const username = document.getElementById('signUp-username').value;
-    const email = document.getElementById('signUp-email').value;
-    const password = document.getElementById('signUp-password').value;
+document.getElementById('login-btn').addEventListener('click', function() {
+    const username = document.getElementById('login-username').value;
+    const email = document.getElementById('login-email').value;
+    const password = document.getElementById('login-password').value;
 
 signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
