@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+}
+
+.card-container {
+    width: 350px;
+    background: white;
+    border-radius: 15px;
+    border: .5px solid #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-container:hover {
+    transform: translateY(-10px);
+}
+
+.upper-container {
+    background: linear-gradient(135deg, #6d5bba, #8d58bf);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.lower-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.lower-container h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.lower-container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #777;
+}
+
+.logout-btn {
+    padding: 10px 20px;
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background-color: #8C8C8C;
+}
