@@ -20,7 +20,7 @@ const database = getDatabase(app);
 
 /* email and password authentication*/
 
-document.getElementById('signup-btn').addEventListener('click', function() {
+document.getElementById('signUp-btn').addEventListener('click', function() {
     const username = document.getElementById('signUp-username').value;
     const email = document.getElementById('signUp-email').value;
     const password = document.getElementById('signUp-password').value;
