@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
 import { getDatabase } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-database.js";
-import { getAuth, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
+import { getAuth, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, GithubAuthProvider } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAhr2QrGgAZ4CiX1E_NGuCTEjO5mdO8rR0",
@@ -69,3 +69,23 @@ googleLogin.addEventListener("click", function() {
         });
 });
 
+// GitHub provider setup
+const provider = new GithubAuthProvider();
+
+// Button to trigger GitHub login
+const githubLoginBtn = document.getElementById("github-login-btn");
+
+githubLoginBtn.addEventListener("click", () => {
+    signInWithPopup(auth, provider)
+    .then((result) => {
+        const user = result.user;
+        console.log("User Info:", user);
+        // Redirect to another page after login
+        window.location.href = "/logged.html";
+    })
+    .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.error("Error during sign-in:", errorCode, errorMessage);
+    });
+});
