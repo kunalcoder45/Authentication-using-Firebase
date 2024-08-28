@@ -29,7 +29,7 @@ signInWithEmailAndPassword(auth, email, password)
         alert('Log In Successful!');
 
         // Redirect to another page after successful login
-        window.location.href = "dashboard.html";
+        window.location.href = "/logged.html";
     })
     .catch((error) => {
         const errorCode = error.code;
