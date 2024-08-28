@@ -37,3 +37,16 @@ onAuthStateChanged(auth, (user) => {
     window.location.href = "/index.html";
   }
 });
+
+
+// Sign out function
+document.getElementById('logout-btn').addEventListener('click', function() {
+    signOut(auth).then(() => {
+        // Sign-out successful.
+        console.log('User signed out.');
+        window.location.href = "login.html"; // Redirect to the login page after sign-out
+    }).catch((error) => {
+        // An error happened during sign-out.
+        console.error('Sign out error:', error);
+    });
+});
