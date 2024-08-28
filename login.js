@@ -17,6 +17,10 @@ const auth = getAuth(app);
 auth.languageCode = 'en';
 const database = getDatabase(app);
 
+document.getElementById('signUp-btn').addEventListener('click', function() {
+    const username = document.getElementById('signUp-username').value;
+    const email = document.getElementById('signUp-email').value;
+    const password = document.getElementById('signUp-password').value;
 
 signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
@@ -33,3 +37,4 @@ signInWithEmailAndPassword(auth, email, password)
         console.error('Log In Error:', errorCode, errorMessage);
         alert('Error during Log In: ' + errorMessage);
     });
+});
