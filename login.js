@@ -12,6 +12,12 @@ const firebaseConfig = {
   measurementId: "G-7Y7Z6GGWZ4"
 };
 
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+auth.languageCode = 'en';
+const database = getDatabase(app);
+
+
 signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
         const user = userCredential.user;
