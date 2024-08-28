@@ -17,6 +17,36 @@ const auth = getAuth(app);
 auth.languageCode = 'en';
 const database = getDatabase(app);
 
+
+/* email and password authentication*/
+
+document.getElementById('signup-btn').addEventListener('click', function() {
+    const username = document.getElementById('signUp-username').value;
+    const email = document.getElementById('signUp-email').value;
+    const password = document.getElementById('signUp-password').value;
+
+    createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            const user = userCredential.user;
+            console.log('Signed up:', user);
+            alert('Sign Up Successful!');
+
+            // Redirect to the login page after sign up
+            window.location.href = "/login.html";
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.error('Sign Up Error:', errorCode, errorMessage);
+            alert('Error during Sign Up: ' + errorMessage);
+        });
+});
+
+
+
+/* Google Authentication*/
+
+
 const provider = new GoogleAuthProvider();
 
 const googleLogin = document.getElementById("google-login-btn");
