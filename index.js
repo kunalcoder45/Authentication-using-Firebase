@@ -32,7 +32,7 @@ document.getElementById('signUp-btn').addEventListener('click', function() {
             alert('Sign Up Successful!');
 
             // Redirect to the login page after sign up
-            window.location.href = "/login.html";
+            window.location.href = "/logged.html";
         })
         .catch((error) => {
             const errorCode = error.code;
