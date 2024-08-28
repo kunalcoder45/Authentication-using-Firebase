@@ -2,13 +2,13 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/fireba
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCLRgwJCXDz9-NtntVCJDKB5tEPO5WwzAk",
-  authDomain: "auth-c20e3.firebaseapp.com",
-  projectId: "auth-c20e3",
-  storageBucket: "auth-c20e3.appspot.com",
-  messagingSenderId: "37692570985",
-  appId: "1:37692570985:web:1f6369f1f3456f6acb91f8",
-  measurementId: "G-XKW1J4TP3Y"
+  apiKey: "AIzaSyAhr2QrGgAZ4CiX1E_NGuCTEjO5mdO8rR0",
+  authDomain: "user-authentication-47380.firebaseapp.com",
+  projectId: "user-authentication-47380",
+  storageBucket: "user-authentication-47380.appspot.com",
+  messagingSenderId: "483187118922",
+  appId: "1:483187118922:web:671077478349e12edf67b3"
+  measurementId: "G-7Y7Z6GGWZ4"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -36,3 +36,24 @@ googleLogin.addEventListener("click", function() {
             alert(`Sign-in failed: ${errorMessage}`);
         });
 });
+
+
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
