@@ -1,4 +1,3 @@
-/*
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
 import { getDatabase } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-database.js";
 import { getAuth, FacebookAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
@@ -44,7 +43,7 @@ facebookLoginButton.addEventListener("click", () => {
     });
 });
 
-*/
+/*
 
         const appId = '969823708165219';
         const appSecret = '0269cbd3248fe2c2290b7c4d';
@@ -81,4 +80,6 @@ facebookLoginButton.addEventListener("click", () => {
             js.src = "https://connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+
+*/
  
