@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Authentication</title>
+<link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js"></script>
+</head>
+<body>
+    <h1>Phone Number Authentication</h1>
+    <div>
+        <input type="text" id="phone-number" placeholder="Enter phone number">
+        <div id="recaptcha-container"></div>
+        <button id="send-code">Send Verification Code</button>
+    </div>
+    <div>
+        <input type="text" id="verification-code" placeholder="Enter verification code">
+        <button id="verify-code">Verify Code</button>
+    </div>
+
+    <script src="/phone-auth. js" defer></script>
+</body>
+</html>
