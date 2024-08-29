@@ -29,7 +29,7 @@ githubLoginBtn.addEventListener("click", () => {
         const user = result.user;
         console.log("User Info:", user);
         // Redirect to another page after login
-        window.location.href = "/logged.html";
+        window.location.href = "https://user-authentation.netlify.app/logged.html";
     })
     .catch((error) => {
         const errorCode = error.code;
