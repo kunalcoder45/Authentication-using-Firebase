@@ -49,3 +49,7 @@ document.getElementById('verify-code').addEventListener('click', () => {
         console.error("Error during code verification:", error);
     });
 });
+
+window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
+    'size': 'normal', // Change to 'normal' for debugging
+});
