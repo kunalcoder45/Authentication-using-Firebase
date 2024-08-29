@@ -32,9 +32,9 @@ githubLoginBtn.addEventListener("click", () => {
         // Redirect to another page after login
         window.location.href = "/logged.html";
     })
-  /*  .catch((error) => {
+   .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         console.error("Error during sign-in:", errorCode, errorMessage);
-    });*/
+    });
 });
