@@ -67,6 +67,17 @@ signOut(auth).then(() => {
 
 
 
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        document.getElementById("userName").textContent = user.displayName;
+        document.getElementById("userEmail").textContent = user.email;
+        document.getElementById("userProfilePicture").src = user.photoURL;
+    } else {
+        window.location.href = "/index.html";
+    }
+});
+
+
 // Sign out function
 document.getElementById('logout-btn').addEventListener('click', function() {
     signOut(auth).then(() => {
