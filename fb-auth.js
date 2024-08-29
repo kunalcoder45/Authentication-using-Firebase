@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
 import { getDatabase } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-database.js";
-import { getAuth, , signInWithPopup } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
+import { getAuth, FacebookAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAhr2QrGgAZ4CiX1E_NGuCTEjO5mdO8rR0",
@@ -17,3 +17,28 @@ const auth = getAuth(app);
 auth.languageCode = 'en';
 const database = getDatabase(app);
 
+// Initialize the Facebook provider
+const provider = new FacebookAuthProvider();
+
+// Get the Facebook login button element
+const facebookLoginButton = document.getElementById("fb-login-btn");
+
+// Add an event listener to the login button
+facebookLoginButton.addEventListener("click", () => {
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      // The signed-in user info.
+      const user = result.user;
+      console.log("User Info:", user);
+
+      // Redirect the user after successful login
+      window.location.href = "/logged.html";
+    })
+    .catch((error) => {
+      // Handle errors here.
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.error("Error during sign-in:", errorCode, errorMessage);
+      alert(`Sign-in failed: ${errorMessage}`);
+    });
+});
