@@ -1,6 +1,6 @@
 // Import the necessary Firebase modules
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
-import { getAuth, signInWithPopup, OAuthProvider } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-auth.js";
+import { getAuth, signInWithPopup, OAuthProvider , MicrosoftSignIn} from "https://www.gstatic.com/firebasejs/9.20.0/firebase-auth.js";
 
 // Your Firebase configuration
 const firebaseConfig = {
