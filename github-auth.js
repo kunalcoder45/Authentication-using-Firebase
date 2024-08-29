@@ -17,12 +17,15 @@ const auth = getAuth(app);
 auth.languageCode = 'en';
 const database = getDatabase(app);
 
-/*
+
 // GitHub provider setup
 const provider = new GithubAuthProvider();
 
 // Button to trigger GitHub login
 const githubLoginBtn = document.getElementById("github-login-btn");
+
+
+/*
 
 githubLoginBtn.addEventListener("click", () => {
     signInWithPopup(auth, provider)
