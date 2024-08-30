@@ -1,10 +1,10 @@
 # Authentication-using-Firebase
 
-Mobile view 
+Desktop view 
 
 ![1000187599](https://github.com/user-attachments/assets/ee0016ca-9017-455f-a5c9-5b02c4b74724)
 
-Desktop view 
+Mobile view 
 
 ![1000187597](https://github.com/user-attachments/assets/a6b1d61c-cade-4e2f-a255-1812301259a0)
 
