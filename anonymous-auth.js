@@ -10,7 +10,6 @@ const firebaseConfig = {
   appId: "1:483187118922:web:671077478349e12edf67b3",
   measurementId: "G-7Y7Z6GGWZ4"
 };
-
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
@@ -22,8 +21,8 @@ anonymousLoginBtn.addEventListener("click", () => {
     .then((result) => {
         const user = result.user;
         console.log("User Info (Anonymous):", user);
-        alert(`Signed in as guest with ID: ${user.uid}`);
-        // Redirect or show authenticated content
+        // Redirect to logged.html after successful login
+        window.location.href = "/logged.html";
     })
     .catch((error) => {
         const errorCode = error.code;
