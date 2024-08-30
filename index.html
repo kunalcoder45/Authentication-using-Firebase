@@ -16,10 +16,16 @@
           <h1>Create Account</h1>
         </div> <br>
         <div class="form">
-        <form action="/register" method="post">
+        <form id="signUpForm" action="/register" method="post">
           <input type="text" name="username" id="signUp-username" placeholder="UserName" />
+
           <input type="email" name="email" placeholder="Email" id="signUp-email" />
+          <span id="emailError" style="color: red; display: none;">Please enter a valid email address.</span>
+
+<div class="password-container">
           <input type="password" name="password" placeholder="Password" id="signUp-password" />
+           <i class="fas fa-eye show-password" id="togglePassword"></i>
+</div>
         </form>
         </div <br>
           <div class="card_terms">
