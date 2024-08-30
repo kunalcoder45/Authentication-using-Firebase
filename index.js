@@ -50,8 +50,8 @@ togglePassword.addEventListener("click", function() {
     const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
     passwordInput.setAttribute("type", type);
     // Toggle the eye icon
-    this.classList.toggle("fa-regular-fa-eye-slash");
-    this.classList.toggle("fa-regular-fa-eye");
+    this.classList.toggle("fa-regular fa-eye-slash");
+    this.classList.toggle("fa-regular fa-eye");
 });
 
 // Email Validation
