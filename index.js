@@ -42,3 +42,28 @@ document.getElementById('signUp-btn').addEventListener('click', function() {
         });
 });
 
+// Show/Hide Password Functionality
+const passwordInput = document.getElementById("signUp-password");
+const togglePassword = document.getElementById("togglePassword");
+
+togglePassword.addEventListener("click", function() {
+    const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+    passwordInput.setAttribute("type", type);
+    // Toggle the eye icon
+    this.classList.toggle("fa-eye");
+    this.classList.toggle("fa-eye-slash");
+});
+
+// Email Validation
+const emailInput = document.getElementById("signUp-email");
+const emailError = document.getElementById("emailError");
+const signUpForm = document.getElementById("signUpForm");
+
+signUpForm.addEventListener("submit", function(event) {
+    if (!emailInput.value.includes("@")) {
+        event.preventDefault();
+        emailError.style.display = "block";
+    } else {
+        emailError.style.display = "none";
+    }
+});
