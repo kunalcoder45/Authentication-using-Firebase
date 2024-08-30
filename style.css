@@ -55,6 +55,8 @@ body {
 .password-container {
   position: relative;
   width: 100%;
+  outline: none;
+  border: none;
 }
 .password-container input {
   width: 100%;
