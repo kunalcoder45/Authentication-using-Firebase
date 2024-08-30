@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body {
+  user-select: none;
+}
 
 .container {
   height: 100vh;
@@ -100,6 +103,12 @@
 .social-container i {
   font-size: 1rem;
 }
+
+.social-container:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 /* mobile view */
 @media screen and (max-width: 767px) {
   .container {
