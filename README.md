@@ -1,4 +1,4 @@
-##Authentation using Firebase 
+#Authentation using Firebase#
 
 Mobile View 
 ![1000187597](https://github.com/user-attachments/assets/714fd3b3-414b-4463-9202-a0f3950bd151)
