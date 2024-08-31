@@ -94,7 +94,7 @@ loginBiometricButton.addEventListener('click', async () => {
 
     if (result.success) {
         alert("Login successful!");
-        window.location.href = "https://your-secure-website.com";
+        window.location.href = "/logged.html";
     } else {
         alert("Biometric authentication failed.");
     }
