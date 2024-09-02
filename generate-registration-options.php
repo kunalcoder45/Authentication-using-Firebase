@@ -4,7 +4,7 @@ require 'vendor/autoload.php';
 
 use lbuchs\WebAuthn\WebAuthn;
 
-$webAuthn = new WebAuthn('Your Website', 'https://your-website.com');
+$webAuthn = new WebAuthn('Your Website', 'https://user-authentation.netlify.app');
 
 // Fetch the user's UID from the POST request
 $data = json_decode(file_get_contents('php://input'), true);
